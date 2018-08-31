@@ -1809,12 +1809,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/octobercms/library.git",
-                "reference": "83f05abb74134b9ff408de1d9daeb10e55d3d61a"
+                "reference": "6c4c4784a1a862595deab01203ffbd211c61d1b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octobercms/library/zipball/83f05abb74134b9ff408de1d9daeb10e55d3d61a",
-                "reference": "83f05abb74134b9ff408de1d9daeb10e55d3d61a",
+                "url": "https://api.github.com/repos/octobercms/library/zipball/6c4c4784a1a862595deab01203ffbd211c61d1b1",
+                "reference": "6c4c4784a1a862595deab01203ffbd211c61d1b1",
                 "shasum": ""
             },
             "require": {
@@ -1899,7 +1899,7 @@
                 "october",
                 "rain"
             ],
-            "time": "2018-08-30T23:28:53+00:00"
+            "time": "2018-08-31T06:59:59+00:00"
         },
         {
             "name": "october/system",
@@ -4435,12 +4435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rainlab/builder-plugin.git",
-                "reference": "abb1a7bc6886004e61ec9bfcaa2c9f4557a76d48"
+                "reference": "eaa0e7b595faba89b497800407f838b35ed55a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rainlab/builder-plugin/zipball/abb1a7bc6886004e61ec9bfcaa2c9f4557a76d48",
-                "reference": "abb1a7bc6886004e61ec9bfcaa2c9f4557a76d48",
+                "url": "https://api.github.com/repos/rainlab/builder-plugin/zipball/eaa0e7b595faba89b497800407f838b35ed55a73",
+                "reference": "eaa0e7b595faba89b497800407f838b35ed55a73",
                 "shasum": ""
             },
             "require": {
@@ -4474,7 +4474,7 @@
                 "october",
                 "octobercms"
             ],
-            "time": "2018-07-30T12:38:57+00:00"
+            "time": "2018-08-31T06:43:18+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
