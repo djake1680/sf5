@@ -3,7 +3,9 @@
   <nav class="lt-no-background">
     <div class="nav-wrapper">
       <div class="lt-container container">
-        <a href="{{ 'home'|page }}" class="brand-logo white-text">SF5 Construction</a>
+        <a href="{{ 'home'|page }}" class="brand-logo white-text">
+            <img src="{{ 'assets/images/sf5-logo-text-320.png'|theme }}" alt="sf5-logo-text">
+        </a>
         <a href="#" data-activates="mobile-menu" class="lt-mobile-toggle button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
