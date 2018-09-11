@@ -1,5 +1,53 @@
 description = "Octaskin Layout"
 ==
+<?php
+function onSend()
+{
+    // Collect input
+    $name = post('name');
+    $last_name = post('last_name');
+    $email = post('email');
+    $subject = "Contact Form Email";
+    $msg = post('textarea1');
+    
+    // Form Validation
+    $validator = Validator::make(
+        [
+            'name' => $name,
+            'last_name' => $last_name,
+            'email' => $email,
+            'textarea1' => $msg,
+        ],
+        [
+            'name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required|email',
+            'textarea1' => 'required',
+        ]
+    );
+
+    if ($validator->fails())
+    {
+        $messages = $validator->messages();
+        throw new ApplicationException($messages->first());
+    }
+
+    // All is well -- Submit form
+    $to = "djake1680@gmail.com";
+    $params = compact('name','email','subject','msg');
+    //Mail::send($to, 'sf5.website::mail.contactform', $params);
+    Mail::send('sf5.website::mail.contactform', $params, function($message) {
+
+    $message->to('djake1680@gmail.com', 'Admin Person');
+    $message->subject('This is a reminder');
+
+});
+    
+    
+    return true;
+}
+?>
+==
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,13 +109,13 @@ description = "Octaskin Layout"
         </div>
       </section>
 
-      <section id="lt-copyright" class="lt-section section">
-        <div class="lt-container container">
-          <div class="lt-content lt-copyright-content">
-            {% partial "pages-all/copyright" %}
-          </div>
-        </div>
-      </section>
+<!--       <section id="lt-copyright" class="lt-section section">
+  <div class="lt-container container">
+    <div class="lt-content lt-copyright-content">
+      {% partial "pages-all/copyright" %}
+    </div>
+  </div>
+</section> -->
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ this.theme.jQuery_version }}/jquery.min.js"></script>

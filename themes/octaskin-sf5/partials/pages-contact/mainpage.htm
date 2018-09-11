@@ -9,39 +9,32 @@
 
 <div class="lt-vertical-spacer"></div>
 
-<form class="col s12">
+<form data-request="onSend" class="col s12">
   <div class="lt-row row">
     <div class="input-field lt-col col s6">
-      <input type="text" class="validate" id="first_name">
-      <label for="first_name" class="active">First Name</label>
+      <input type="text" name="name" class="validate" id="name">
+      <label for="name" class="active">First Name</label>
     </div>
     <div class="input-field lt-col col s6">
-      <input type="text" id="last_name">
+      <input type="text" name="last_name" id="last_name">
       <label for="last_name">Last Name</label>
     </div>
   </div>
   <div class="lt-row row">
     <div class="input-field lt-col col s12">
-      <input type="email" class="validate" id="email">
+      <input type="email" name="email" class="validate" id="email">
       <label data-success="right" data-error="wrong" for="email">Email</label>
     </div>
   </div>
   <div class="lt-row row">
     <div class="input-field lt-col col s12">
-      <textarea id="textarea1" class="materialize-textarea"></textarea>
+      <textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
       <label for="textarea1">Description</label>
     </div>
   </div>
   <div class="lt-row row">
     <div class="lt-col col s12">
       <label for="">ADD TERMS OF SERVICE</label>
-    </div>
-  </div>
-
-  <div class="lt-row row">
-    <div class="lt-col col s12">
-      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-      <label for="filled-in-box">Send copy to my email</label>
     </div>
   </div>
 
